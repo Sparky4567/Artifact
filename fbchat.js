@@ -1,5 +1,5 @@
 if (config.messenger === true) {
-	if (document.getElementById("fb-customer-chat")) {
+	if (!document.getElementById("fb-customer-chat")) {
 		setTimeout(() => {
 			var chatbox = document.getElementById("fb-customer-chat");
 			if (chatbox.length) {
