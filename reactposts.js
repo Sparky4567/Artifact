@@ -31,7 +31,6 @@ class PostComponent extends React.Component {
 		};
 		this.getVal = this.getVal.bind(this);
 		this.loadmore = this.loadmore.bind(this);
-		this.messenger = this.messenger.bind(this);
 
 		this.settings = {
 			key: config.key,
@@ -40,21 +39,6 @@ class PostComponent extends React.Component {
 		this.importantUrls = {
 			mainFeed: `https://www.googleapis.com/blogger/v3/blogs/${this.settings.blogId}/posts?maxResults=${this.state.maxResults}&status=live&fetchImages=true&fetchBodies=true&key=${this.settings.key}`,
 		};
-	}
-
-	messenger() {
-		if (config.messenger === true) {
-			var chatbox = document.getElementById("fb-customer-chat");
-			chatbox.setAttribute("page_id", config.fbpageId);
-			chatbox.setAttribute("attribution", "biz_inbox");
-
-			window.fbAsyncInit = function () {
-				FB.init({
-					xfbml: true,
-					version: "v12.0",
-				});
-			};
-		}
 	}
 
 	getVal() {
