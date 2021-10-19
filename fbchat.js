@@ -1,12 +1,12 @@
 if (config.messenger === true) {
 	if (document.getElementById("fb-customer-chat")) {
 		setTimeout(() => {
-			if(document.getElementById("fb-customer-chat"){
+			if (document.getElementById("fb-customer-chat")) {
 				var chatbox = document.getElementById("fb-customer-chat");
 				if (chatbox.length) {
 					chatbox.setAttribute("page_id", config.fbpageId);
 					chatbox.setAttribute("attribution", "biz_inbox");
-		
+
 					window.fbAsyncInit = function () {
 						FB.init({
 							xfbml: true,
@@ -19,12 +19,12 @@ if (config.messenger === true) {
 						if (d.getElementById(id)) return;
 						js = d.createElement(s);
 						js.id = id;
-						js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+						js.src =
+							"https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
 						fjs.parentNode.insertBefore(js, fjs);
 					})(document, "script", "facebook-jssdk");
 				}
 			}
 		}, 1000);
-	
 	}
 }
