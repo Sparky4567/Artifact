@@ -71,7 +71,6 @@ class OnePost extends React.Component {
     this.getNextButton = this.getNextButton.bind(this);
     this.getPrevious = this.getPrevious.bind(this);
     this.getPreviousButton = this.getPreviousButton.bind(this);
-    this.translator = this.translator.bind(this);
     this.adsense = this.adsense.bind(this);
     this.goUp = this.goUp.bind(this);
   }
@@ -104,15 +103,6 @@ class OnePost extends React.Component {
       window.scrollTo(0, 0);
       this.setState({ shouldgoUp: null });
     }
-  }
-
-  translator() {
-    let el = document.createElement("script");
-    el.id = "bigG";
-    el.defer = "defer";
-    el.type = "text/javascript";
-    el.src = `https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit`;
-    document.body.appendChild(el);
   }
 
   shareThis() {
@@ -158,7 +148,6 @@ class OnePost extends React.Component {
           ) {
             this.setState({ repeat: true }, () => {
               this.gen();
-              this.translator();
               this.disquscheck();
               this.adsense();
               this.goUp();
@@ -368,8 +357,6 @@ class OnePost extends React.Component {
   render() {
     return (
       <div>
-        <div id="fb-root"></div>
-        <div id="fb-customer-chat" className="fb-customerchat reset"></div>
         {this.state.message !== null ? (
           <div className="row">
             <div className="col-lg-7 col-md-7 mx-auto col-sm-12 col-xs-12 d-flex align-items-stretch">
@@ -394,7 +381,7 @@ class OnePost extends React.Component {
                   <h4 className="card-title">{this.state.message.title}</h4>
                   <div className="row pt-4 pb-2">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div id="google_translate_element"></div>
+                      <GoogleTranslator />
                     </div>
                   </div>
                   <div className="row py-4">
@@ -414,6 +401,7 @@ class OnePost extends React.Component {
                   ></div>
                   <div className="row py-4">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <FbChat />
                       <div id="disqus_thread"></div>
                     </div>
                   </div>
@@ -470,7 +458,7 @@ class OnePost extends React.Component {
             </div>
           </div>
         ) : (
-          "Loading..."
+          <LoadingComponent />
         )}
       </div>
     );
