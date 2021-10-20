@@ -5,6 +5,9 @@ class GoogleTranslator extends React.Component {
 		this.state = {
 			loaded: null,
 		};
+		this.settings = {
+			timeout: 700,
+		};
 		this.googleTranslatator = this.googleTranslatator.bind(this);
 		this.checkifLoaded = this.checkifLoaded.bind(this);
 	}
