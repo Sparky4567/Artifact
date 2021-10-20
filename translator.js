@@ -34,7 +34,7 @@ class GoogleTranslator extends React.Component {
 		el.onload = () => {
 			setTimeout(() => {
 				this.setState({ loaded: true });
-			}, 300);
+			}, this.settings.timeout);
 		};
 		document.body.appendChild(el);
 	}
