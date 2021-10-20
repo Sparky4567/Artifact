@@ -5,9 +5,12 @@ class GoogleTranslator extends React.Component {
 		this.state = {
 			loaded: null,
 		};
+<<<<<<< HEAD
 		this.settings = {
 			timeout: 700,
 		};
+=======
+>>>>>>> 41c6a4574cf56f958973bc2bbb62ae2197cc0b5e
 		this.googleTranslatator = this.googleTranslatator.bind(this);
 		this.checkifLoaded = this.checkifLoaded.bind(this);
 	}
@@ -37,7 +40,11 @@ class GoogleTranslator extends React.Component {
 		el.onload = () => {
 			setTimeout(() => {
 				this.setState({ loaded: true });
+<<<<<<< HEAD
 			}, this.settings.timeout);
+=======
+			}, 300);
+>>>>>>> 41c6a4574cf56f958973bc2bbb62ae2197cc0b5e
 		};
 		document.body.appendChild(el);
 	}
