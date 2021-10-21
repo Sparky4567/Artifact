@@ -337,16 +337,20 @@ class OnePost extends React.Component {
     ) {
       let postId = window.location.pathname;
       let url = `https://www.googleapis.com/blogger/v3/blogs/${this.settings.blogId}/posts/bypath?path=${postId}&fetchBodies=true&fetchImages=true&key=${this.settings.key}`;
-      fetch(url)
-        .then((r) => r.json())
-        .then((d) => {
-          this.setState({ message: d }, () => {
-            this.disquscheck();
-            this.shareThis();
-            this.adsense();
-            this.props.location.reset = false;
-          });
+      let updater = async function (passedUrl) {
+        let r = await fetch(passedUrl);
+        let d = await r.json();
+        return d;
+      };
+      let dataFetch = updater(url);
+      dataFetch.then((data) => {
+        this.setState({ message: data }, () => {
+          this.disquscheck();
+          this.shareThis();
+          this.adsense();
+          this.props.location.reset = false;
         });
+      });
     }
     if (this.state.shouldhideNav === true) {
       this.setState({ shouldhideNav: false });
@@ -366,6 +370,7 @@ class OnePost extends React.Component {
             <div className="col-lg-7 col-md-7 mx-auto col-sm-12 col-xs-12 d-flex align-items-stretch">
               <div className="card mt-4 mb-4" style={this.cardWidth}>
                 <img
+                  loading="lazy"
                   className="card-img-top"
                   style={this.cardStyle}
                   src={

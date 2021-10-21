@@ -162,6 +162,7 @@ class PostComponent extends React.Component {
                             }}
                           >
                             <img
+                              loading="lazy"
                               style={this.carouselStyle}
                               src={
                                 item.images ? item.images[0].url : graphImageUrl
@@ -194,6 +195,7 @@ class PostComponent extends React.Component {
                             }}
                           >
                             <img
+                              loading="lazy"
                               style={this.carouselStyle}
                               src={
                                 item.images ? item.images[0].url : graphImageUrl
@@ -251,6 +253,7 @@ class PostComponent extends React.Component {
                 >
                   <div className="card mt-4 mb-4" style={this.cardWidth}>
                     <img
+                      loading="lazy"
                       className="card-img-top"
                       style={this.cardStyle}
                       src={
@@ -344,6 +347,7 @@ class PostComponent extends React.Component {
                 >
                   <div className="card mt-4 mb-4" style={this.cardWidth}>
                     <img
+                      loading="lazy"
                       className="card-img-top"
                       style={this.cardStyle}
                       src={
