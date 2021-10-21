@@ -25,10 +25,10 @@ class LoadingComponent extends React.Component {
 				<style>{this.settings.inject}</style>
 				<div className="container-fluid fill-remaining">
 					<div className="row text-center pt-4 pb-2 align-items-center fill-remaining justify-content-center flex-grow-1">
-						<div className="col-lg-12 text-center col-md-12 col-sm-12 col-xs-12">
-							<p>
-								<div className="loader d-block mx-auto" />
-							</p>
+						<div className="col-lg-4 text-center col-md-4 mx-auto col-sm-12 col-xs-12">
+							<div className="col-lg-4 text-center col-md-4 mx-auto col-sm-12 col-xs-12">
+								<p className="loader d-block mx-auto"></p>
+							</div>
 						</div>
 					</div>
 				</div>
