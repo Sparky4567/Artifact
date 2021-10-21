@@ -58,34 +58,47 @@ class PostComponent extends React.Component {
         this.setState({ searchData: temp });
       }
     } else if (document.getElementById("searField").value === "") {
-      fetch(this.importantUrls.mainFeed)
-        .then((r) => r.json())
-        .then((d) => {
-          this.setState({ data: d.items });
-        });
+      let search = async function (passedUrl) {
+        let r = await fetch(passedUrl);
+        let d = await r.json();
+        return d;
+      };
+      let s = search(this.importantUrls.mainFeed);
+      s.then((d) => {
+        this.setState({ data: d.items });
+      });
     }
   }
 
   loadmore() {
     this.setState({ maxResults: this.state.maxResults + 9 }, () => {
       this.importantUrls.mainFeed = `https://www.googleapis.com/blogger/v3/blogs/${this.settings.blogId}/posts?maxResults=${this.state.maxResults}&status=live&fetchImages=true&fetchBodies=true&key=${this.settings.key}`;
-      fetch(this.importantUrls.mainFeed)
-        .then((r) => r.json())
-        .then((d) => {
-          this.setState({ data: d.items });
-        });
+      let fethcer = async function (passedUrl) {
+        let r = await fetch(passedUrl);
+        let dat = await r.json();
+        return dat;
+      };
+      let getter = fethcer(this.importantUrls.mainFeed);
+      getter.then((s) => {
+        this.setState({ data: s.items });
+      });
     });
   }
 
   componentDidMount() {
-    fetch(this.importantUrls.mainFeed)
-      .then((r) => r.json())
-      .then((d) => {
-        this.setState({ data: d.items }, () => {
-          let carouselSlicedItems = this.state.data.slice(0, 4);
-          this.setState({ carouselItems: carouselSlicedItems });
-        });
+    let feedFetch = async function (passedUrl) {
+      let r = await fetch(passedUrl);
+      let d = await r.json();
+      let c = await d.items.slice(0, 4);
+      return { maindata: d.items, carouseldata: c };
+    };
+    let fetcher = feedFetch(this.importantUrls.mainFeed);
+    fetcher.then((s) => {
+      this.setState({
+        data: s.maindata,
+        carouselItems: s.carouseldata,
       });
+    });
   }
 
   render() {
@@ -392,9 +405,7 @@ class PostComponent extends React.Component {
         </div>
       );
     } else {
-      return (
-       <LoadingComponent/>
-      );
+      return <LoadingComponent />;
     }
   }
 }
