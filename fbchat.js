@@ -6,6 +6,8 @@ class FbChat extends React.Component {
 		};
 	}
 
+	fbChatIni() {}
+
 	componentDidMount() {
 		if (config.messenger.enabled === true && config.messenger.fbpageId !== "") {
 			if (this.state.shouldUpdate === null) {
@@ -31,15 +33,6 @@ class FbChat extends React.Component {
 					fjs.parentNode.insertBefore(js, fjs);
 				})(document, "script", "facebook-jssdk");
 				this.setState({ shouldUpdate: true });
-			} else {
-				this.setState({ shouldUpdate: null }, () => {
-					if (window.FB) {
-						FB.init({
-							xfbml: true,
-							version: "v12.0",
-						});
-					}
-				});
 			}
 		}
 	}
