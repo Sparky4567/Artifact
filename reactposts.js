@@ -108,6 +108,8 @@ class PostComponent extends React.Component {
 					<div className="row pt-4 pb-2">
 						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<GoogleTranslator />
+							<GoogleAnalytics />
+							<FbChat />
 						</div>
 					</div>
 					<div className="row pt-4 pb-2">

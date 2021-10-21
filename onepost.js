@@ -122,10 +122,14 @@ class OnePost extends React.Component {
 
 	adsense() {
 		if (config.adsenseId !== "") {
-			let el = document.createElement("script");
-			el.crossOrigin = "anonymous";
-			el.defer = "defer";
-			el.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${config.adsenseId}`;
+			if (!window.adsbygoogle) {
+				let el = document.createElement("script");
+				el.crossOrigin = "anonymous";
+				el.defer = "defer";
+				el.setAttribute("data-ad-client", `ca-pub-${config.adsenseId}`);
+				el.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js`;
+				document.body.appendChild(el);
+			}
 		}
 	}
 
