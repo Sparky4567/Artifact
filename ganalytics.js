@@ -31,6 +31,25 @@ class GoogleAnalytics extends React.Component {
 						gtag("config", config.gA.gtagId);
 					}, this.settings.timeout);
 				}
+			} else {
+				try {
+					window.dataLayer = window.dataLayer || [];
+					function gtag() {
+						dataLayer.push(arguments);
+					}
+					gtag("js", new Date());
+					gtag("config", config.gA.gtagId);
+				} catch (error) {
+					setTimeout(() => {
+						window.dataLayer = window.dataLayer || [];
+						function gtag() {
+							dataLayer.push(arguments);
+						}
+						gtag("js", new Date());
+
+						gtag("config", config.gA.gtagId);
+					}, this.settings.timeout);
+				}
 			}
 		}
 	}
