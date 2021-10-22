@@ -120,18 +120,6 @@ class OnePost extends React.Component {
 		}
 	}
 
-	adsense() {
-		if (config.adsenseId !== "") {
-			if (!window.adsbygoogle) {
-				let el = document.createElement("script");
-				el.async;
-				el.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${config.adsenseId}`;
-				el.crossorigin = "anonymous";
-				document.body.appendChild(el);
-			}
-		}
-	}
-
 	componentDidMount() {
 		if (this.props.location.message) {
 			this.setState(
@@ -151,7 +139,6 @@ class OnePost extends React.Component {
 						this.setState({ repeat: true }, () => {
 							this.gen();
 							this.disquscheck();
-							this.adsense();
 							this.goUp();
 						});
 					}
@@ -189,7 +176,6 @@ class OnePost extends React.Component {
 				this.setState({ message: r, shouldgoUp: true }, () => {
 					this.disquscheck();
 					this.shareThis();
-					this.adsense();
 					this.goUp();
 				});
 			});
@@ -349,7 +335,6 @@ class OnePost extends React.Component {
 				this.setState({ message: data }, () => {
 					this.disquscheck();
 					this.shareThis();
-					this.adsense();
 					this.props.location.reset = false;
 				});
 			});
@@ -403,6 +388,7 @@ class OnePost extends React.Component {
 												data-url={window.location.href}
 												data-title={document.title}
 											/>
+											<AdsenseComponent />
 										</div>
 									</div>
 									<div
