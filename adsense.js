@@ -30,8 +30,9 @@ class AdsenseComponent extends React.Component {
 	}
 
 	render() {
-		return (
-			<div className="row py-4">
+		return config.adsense.adsenseId !== "" &&
+			config.adsense.enabled === true ? (
+			<div className="row py-4 text-center">
 				<ins
 					className="adsbygoogle"
 					style={this.adElementStyle}
@@ -42,6 +43,8 @@ class AdsenseComponent extends React.Component {
 					data-adtest="on"
 				></ins>
 			</div>
+		) : (
+			""
 		);
 	}
 }
