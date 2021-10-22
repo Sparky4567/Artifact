@@ -2,15 +2,13 @@ class FbChat extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			shouldUpdate: null,
+			flag: null,
 		};
 	}
 
-	fbChatIni() {}
-
 	componentDidMount() {
 		if (config.messenger.enabled === true && config.messenger.fbpageId !== "") {
-			if (this.state.shouldUpdate === null) {
+			if (this.state.flag === null) {
 				var chatbox = document.getElementById("fb-customer-chat");
 				chatbox.setAttribute("page_id", config.messenger.fbpageId);
 				chatbox.setAttribute("attribution", "biz_inbox");
@@ -32,7 +30,7 @@ class FbChat extends React.Component {
 						"https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
 					fjs.parentNode.insertBefore(js, fjs);
 				})(document, "script", "facebook-jssdk");
-				this.setState({ shouldUpdate: true });
+				this.setState({ flag: true });
 			}
 		}
 	}
