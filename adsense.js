@@ -8,36 +8,38 @@ class AdsenseComponent extends React.Component {
 			timeout: 700,
 		};
 		this.adElementStyle = {
-			width: 250 + "px",
+			width: 80 + "%",
 			height: 14 + "rem",
+			display: "block",
+			marginLeft: "auto",
+			marginRight: "auto",
 		};
 	}
 
 	componentDidMount() {
 		if (config.adsense.adsenseId !== "" && config.adsense.enabled === true) {
 			if (config.adsense.adSlot !== "") {
-				if (!window.adsbygoogle) {
-					let el = document.createElement("script");
-					el.async;
-					el.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js`;
-					el.crossorigin = "anonymous";
-					document.body.appendChild(el);
-					(window.adsbygoogle = window.adsbygoogle || []).push({});
-				}
+				let el = document.createElement("script");
+				el.async;
+				el.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js`;
+				el.crossorigin = "anonymous";
+				document.body.appendChild(el);
+				window.adsbygoogle.push({});
 			}
 		}
 	}
 
 	render() {
 		return (
-			<div className="row">
+			<div className="row py-4">
 				<ins
-					className="adsbygoogle d-block mx-auto"
+					className="adsbygoogle"
 					style={this.adElementStyle}
 					data-ad-client={`ca-pub-${config.adsense.adsenseId}`}
 					data-ad-slot={config.adsense.adSlot}
 					data-ad-layout="in-article"
 					data-ad-format="fluid"
+					data-adtest="on"
 				></ins>
 			</div>
 		);
