@@ -16,4 +16,4 @@ Live examples:
 
 [![wakatime](https://wakatime.com/badge/user/1fbc8005-b2d0-4f4f-93e8-f12d7d25d676/project/170bfe96-7b7e-4cf3-8afc-42355bc5264b.svg)](https://wakatime.com/badge/user/1fbc8005-b2d0-4f4f-93e8-f12d7d25d676/project/170bfe96-7b7e-4cf3-8afc-42355bc5264b)
 
-You can contact me by email: andrius@artefaktas.eu
+You can contact me via email: andrius@artefaktas.eu
