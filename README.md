@@ -13,3 +13,5 @@ Live examples:
 [https://artefaktase.blogspot.com](https://artefaktase.blogspot.com)
 
 [https://www.artefaktas.eu](https://www.artefaktas.eu)
+
+[![wakatime](https://wakatime.com/badge/user/1fbc8005-b2d0-4f4f-93e8-f12d7d25d676/project/170bfe96-7b7e-4cf3-8afc-42355bc5264b.svg)](https://wakatime.com/badge/user/1fbc8005-b2d0-4f4f-93e8-f12d7d25d676/project/170bfe96-7b7e-4cf3-8afc-42355bc5264b)
