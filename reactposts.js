@@ -110,6 +110,7 @@ class PostComponent extends React.Component {
 							<GoogleTranslator />
 							<GoogleAnalytics />
 							<FbChat />
+							<OneSignalComponent />
 						</div>
 					</div>
 					<div className="row pt-4 pb-2">
