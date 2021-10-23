@@ -4,7 +4,7 @@ let config = {
 	//Keys
 
 	//Blogger v3 api key
-	key: "",
+	key: "",   
 
 	//Blog id
 	blogid: "1016451689931209365",
