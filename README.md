@@ -18,4 +18,6 @@ Live examples:
 
 [![](https://data.jsdelivr.com/v1/package/gh/Sparky4567/Artifact/badge)](https://www.jsdelivr.com/package/gh/Sparky4567/Artifact)
 
+[https://www.jsdelivr.com/package/gh/Sparky4567/Artifact](https://www.jsdelivr.com/package/gh/Sparky4567/Artifact)
+
 You can contact me via email: andrius@artefaktas.eu
