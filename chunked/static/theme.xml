@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:js='false' lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'><head><meta charset='utf-8'/><meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'/><meta content='max-image-preview:large' name='robots'/><meta content='article' property='og:type'/><meta expr:content='data:blog.canonicalUrl' property='og:url'/><meta content='816365865431100' property='fb:pages'/><b:if cond='data:blog.metaDescription'><meta expr:content='data:blog.metaDescription' property='og:description'/></b:if><meta content='summary' name='twitter:card'/><meta content='@Artefaktas' name='twitter:site'/><meta expr:content='data:blog.pageTitle' name='twitter:title'/><b:if cond='data:blog.metaDescription'><meta expr:content='data:blog.metaDescription' name='twitter:description'/><meta expr:content='data:blog.pageTitle' name='twitter:description'/></b:if><b:if cond='data:blog.postImageUrl'><meta expr:content='data:blog.postImageUrl' property='og:image'/><b:else/><meta content='https://1.bp.blogspot.com/-jfiKxJ9EoHQ/X7Y2EyQq8sI/AAAAAAAAE8Y/qxF0UkIJMPsFVqPvt6S0YdhjQBDMJIxowCLcBGAsYHQ/s1200/cyber-3400789_1920.jpg' property='og:image'/></b:if><b:if cond='data:blog.pageType == &quot;index&quot;'><title><b:eval expr='data:blog.title + &quot; | &quot; + data:blog.url'/></title><b:if cond='data:blog.metaDescription'><meta expr:content='data:blog.metaDescription' name='description'/><b:else/><meta expr:content='data:blog.pageTitle' name='description'/></b:if></b:if><link href='https://artifacttemplates.b-cdn.net' rel='dns-prefetch'/><link href='https://unpkg.com' rel='dns-prefetch'/><link href='https://altiuszone.b-cdn.net' rel='dns-prefetch'/><link href='https://cdn.jsdelivr.net' rel='dns-prefetch'/><link href='https://platform-cdn.sharethis.com' rel='preconnect'/>
+   <link as='script' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/css/main.c530b490.chunk.css' rel='preload'/>
+  <link href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/css/main.c530b490.chunk.css' media='print' onload='this.media=&apos;all&apos;' rel='stylesheet'/>
+  <link as='script' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/jq.js' rel='preload'/>
+  <link as='script' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/bootstrap.js' rel='preload'/>
+  <b:skin><![CDATA[]]></b:skin></head><body> <b:section id='sec'/> <div className='container-fluid' id='main'><div id='searchField'/><div id='posts'/></div>
+  
+   <!-- Configuration code goes here 
+        Limit your API key to one service (Blogger) and your domain name only !!! -->
+        
+  <script defer='defer'>
+  //<![CDATA[
+  let config = {
+	aboutMepostUrl: "https://artefaktase.blogspot.com/2021/10/about-me.html",
+	aboutmepageTitle: "About me",
+	adsenseId: "",
+	backtomainTitile: "Back to main",
+	blogid: "6298745841393040373",
+	carousel: true,
+	contactpageTitle: "Contacts",
+	contactsPostUrl:
+		"https://artefaktase.blogspot.com/2021/10/contact-information.html",
+	discusScript: "https://artefaktase.disqus.com/embed.js",
+	graphImageUrl: "",
+	key: "",
+	loadmoreTitle: "Load more",
+	mainpageTitle: "Home",
+	maxCount: 9,
+	messenger: false,
+	nextTitle: "Next",
+	previousTitle: "Previous",
+	publishedbyTitle: "Published by: ",
+	publishedonText: "Published on: ",
+	readmoreTitle: "Read more",
+	searchplaceholderText: "I am looking for...",
+	shareKey: "61672af6e35b180013fb28a1",
+	//Adsense support id after (ca-pub-)
+	//You fill find by clicking
+	//Get code
+	adsense: {
+		enabled: false,
+		adsenseId: "",
+		adSlot: "",
+	},
+	//FB Messenger support
+	//set to true to activate
+	// whitelist your domain on
+	//fb page messenger integration settings
+	//FB Messenger support
+	//set to true to activate
+	// whitelist your domain on
+	//fb page messenger integration settings
+	messenger: {
+		enabled: false,
+		fbpageId: "",
+	},
+	gA: {
+		enabled: false,
+		gtagId: "",
+	},
+
+	//OneSignalSupport
+	oneSignal: {
+		enabled: false,
+		onesignalId: "",
+	},
+
+	//404
+	notfoundError: "404",
+	notfoundText: " . . . Wait . . . Did my dog bite the wires again ???",
+};
+
+window.config = config;
+//]]>
+  </script>
+  <script defer='defer' src='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/jq.js'/><script defer='defer' src='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/bootstrap.js'/><script defer='defer'> //<![CDATA[
+!(function (e) {
+				function t(t) {
+					for (
+						var n, u, i = t[0], c = t[1], l = t[2], p = 0, s = [];
+						p < i.length;
+						p++
+					)
+						(u = i[p]),
+							Object.prototype.hasOwnProperty.call(o, u) &&
+								o[u] &&
+								s.push(o[u][0]),
+							(o[u] = 0);
+					for (n in c)
+						Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n]);
+					for (f && f(t); s.length; ) s.shift()();
+					return a.push.apply(a, l || []), r();
+				}
+				function r() {
+					for (var e, t = 0; t < a.length; t++) {
+						for (var r = a[t], n = !0, i = 1; i < r.length; i++) {
+							var c = r[i];
+							0 !== o[c] && (n = !1);
+						}
+						n && (a.splice(t--, 1), (e = u((u.s = r[0]))));
+					}
+					return e;
+				}
+				var n = {},
+					o = { 1: 0 },
+					a = [];
+				function u(t) {
+					if (n[t]) return n[t].exports;
+					var r = (n[t] = { i: t, l: !1, exports: {} });
+					return e[t].call(r.exports, r, r.exports, u), (r.l = !0), r.exports;
+				}
+				(u.e = function (e) {
+					var t = [],
+						r = o[e];
+					if (0 !== r)
+						if (r) t.push(r[2]);
+						else {
+							var n = new Promise(function (t, n) {
+								r = o[e] = [t, n];
+							});
+							t.push((r[2] = n));
+							var a,
+								i = document.createElement("script");
+							(i.charset = "utf-8"),
+								(i.timeout = 120),
+								u.nc && i.setAttribute("nonce", u.nc),
+								(i.src = (function (e) {
+									return (
+										u.p +
+										"static/js/" +
+										({}[e] || e) +
+										"." +
+										{ 3: "6380972b" }[e] +
+										".chunk.js"
+									);
+								})(e));
+							var c = new Error();
+							a = function (t) {
+								(i.onerror = i.onload = null), clearTimeout(l);
+								var r = o[e];
+								if (0 !== r) {
+									if (r) {
+										var n = t && ("load" === t.type ? "missing" : t.type),
+											a = t && t.target && t.target.src;
+										(c.message =
+											"Loading chunk " +
+											e +
+											" failed.\n(" +
+											n +
+											": " +
+											a +
+											")"),
+											(c.name = "ChunkLoadError"),
+											(c.type = n),
+											(c.request = a),
+											r[1](c);
+									}
+									o[e] = void 0;
+								}
+							};
+							var l = setTimeout(function () {
+								a({ type: "timeout", target: i });
+							}, 12e4);
+							(i.onerror = i.onload = a), document.head.appendChild(i);
+						}
+					return Promise.all(t);
+				}),
+					(u.m = e),
+					(u.c = n),
+					(u.d = function (e, t, r) {
+						u.o(e, t) ||
+							Object.defineProperty(e, t, { enumerable: !0, get: r });
+					}),
+					(u.r = function (e) {
+						"undefined" != typeof Symbol &&
+							Symbol.toStringTag &&
+							Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+							Object.defineProperty(e, "__esModule", { value: !0 });
+					}),
+					(u.t = function (e, t) {
+						if ((1 & t && (e = u(e)), 8 & t)) return e;
+						if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+						var r = Object.create(null);
+						if (
+							(u.r(r),
+							Object.defineProperty(r, "default", { enumerable: !0, value: e }),
+							2 & t && "string" != typeof e)
+						)
+							for (var n in e)
+								u.d(
+									r,
+									n,
+									function (t) {
+										return e[t];
+									}.bind(null, n)
+								);
+						return r;
+					}),
+					(u.n = function (e) {
+						var t =
+							e && e.__esModule
+								? function () {
+										return e.default;
+								  }
+								: function () {
+										return e;
+								  };
+						return u.d(t, "a", t), t;
+					}),
+					(u.o = function (e, t) {
+						return Object.prototype.hasOwnProperty.call(e, t);
+					}),
+					(u.p =
+						"https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/"),
+					(u.oe = function (e) {
+						throw (console.error(e), e);
+					});
+				var i = (this.webpackJsonpartifactapp =
+						this.webpackJsonpartifactapp || []),
+					c = i.push.bind(i);
+				(i.push = t), (i = i.slice());
+				for (var l = 0; l < i.length; l++) t(i[l]);
+				var f = c;
+				r();
+			})([]);
+//]]>
+  </script><script defer='defer' src='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/js/2.f0096906.chunk.js'/><script defer='defer' src='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/js/main.ff3cca8a.chunk.js'/></body></html>
