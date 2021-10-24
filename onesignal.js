@@ -24,7 +24,7 @@ class OneSignalComponent extends React.Component {
 		) {
 			let el = document.createElement("script");
 			el.src = "https://cdn.onesignal.com/sdks/OneSignalSDK.js";
-			el.async;
+			el.defer="defer";
 			document.body.appendChild(el);
 			try {
 				this.oneSignalInit(config.oneSignal.onesignalId);
