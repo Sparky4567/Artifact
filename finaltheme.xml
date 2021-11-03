@@ -29,7 +29,7 @@
   <link as='script' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/bootstrap.js' rel='preload'/>
   <link as='script' href='https://altiuszone.b-cdn.net/artifact/reactconfig.js' rel='preload'/>
   <link as='script' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/js/2.50d4d050.chunk.js' rel='preload'/>
-  <link as='script' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/js/main.a1c08538.chunk.js' rel='preload'/>
+  <link as='script' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/js/main.2493fa6a.chunk.js' rel='preload'/>
   
   <b:skin><![CDATA[
 .twitter-tweet {
@@ -250,5 +250,5 @@ window.config = config;
 //]]>
   </script>
   <script defer='defer' src='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/js/2.50d4d050.chunk.js'/>
-  <script defer='defer' src='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/js/main.a1c08538.chunk.js'/>
+  <script defer='defer' src='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/js/main.2493fa6a.chunk.js'/>
   </body></html>
