@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html b:css='false' b:js='false' lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'><head>
-   <link as='script' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/css/main.c530b490.chunk.css' rel='preload'/>
+   <link as='style' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/css/main.c530b490.chunk.css' rel='preload'/>
   <link href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/chunked/static/css/main.c530b490.chunk.css' media='print' onload='this.media=&apos;all&apos;' rel='stylesheet'/>  
 	<meta charset='utf-8'/>
- <meta content='article' property='og:type'/><meta expr:content='data:blog.canonicalUrl' property='og:url'/><b:if cond='data:blog.metaDescription'>
+  <meta content='article' property='og:type'/><meta expr:content='data:blog.canonicalUrl' property='og:url'/><b:if cond='data:blog.metaDescription'>
         <meta expr:content='data:blog.metaDescription' property='og:description'/></b:if>
         <meta content='summary' name='twitter:card'/>
         <meta content='@Artefaktas' name='twitter:site'/>
@@ -12,7 +12,7 @@
         <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
         <meta expr:content='data:blog.pageTitle' name='twitter:description'/></b:if>
         <b:if cond='data:blog.postImageUrl'><meta expr:content='data:blog.postImageUrl' property='og:image'/><b:else/>
-        <meta content='' property='og:image'/></b:if>
+        <meta content='https://lh3.googleusercontent.com/--GqUgwwXVEo/YHrDeth2ipI/AAAAAAAAFdU/1KTu2EroSK8BtrmGDb-qOkU3q0TQmXbqwCEwYBhgLKtMDABHVOhypmd4s3sLvdSGfFoSsH3fBE93iXP7xesIJ0W8Rtac3_lb4OxEljWpeJN4o0yul_2Shk8ACq40N-iRhxtNq32agHZf6sy3KDXYw_nJ4bu-A5NGE-dov57TO5N_rYdhA5neOKZY90hybUZAWyAzys31yJ6FOW0A0ARk_cGPzcvyiJbF1ALdYoZ0tg7IHYRA_1LJ5t4eMOMpJKeJ06ZSf9NHz7P5otHedxzc5hbogB0uRgMvB6Q-T6WIe69YEy1yAhJ2RVc3MYKiKrjej-2wvboMM9yFmWqkxgh6gxSAqsWC_gLtZvBNkPKA3obzSPvmeQAyvfe8fPbwzyvPmpBrHsG_RB24CA9_K5MLPt2TTGAg827bLx5nY4miCJZ-LZJ7HL438wY4XSGnf97qQcfcR1bAot3-bpR68yvyWY6J6zUeFUSoRgUYJtD3n3J223iXziLr_Uk-rWQfKtJwRD-SjGIGxWl8wcmcXfhajHY5J56GkTEbAkP_g1y4wCEtI-ObHNvIdc5bX599ATKoeBrj8aw-bAIpVXh1MchiNddD_2_hhsA9nzCmRUhMCv7V7ynUdBetVHHanLl01gYWbHsjO8ILMvzfaw9AFsU4WpuOl8Ycw1OyAjAY/s1600/bot.jpg' property='og:image'/></b:if>
         <b:if cond='data:blog.pageType == &quot;index&quot;'>
         <title><b:eval expr='data:blog.title + &quot; | &quot; + data:blog.url'/></title>
           <b:if cond='data:blog.metaDescription'>
@@ -24,6 +24,8 @@
           <title><b:eval expr='data:blog.pageTitle + &quot; | &quot; + data:blog.url'/></title>
           <meta expr:content='data:blog.pageTitle + &quot; | &quot; + data:blog.url' property='og:title'/>
          </b:if>
+		<meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'/>
+		<meta content='max-image-preview:large' name='robots'/>
   <link href='https://artifacttemplates.b-cdn.net' rel='dns-prefetch'/><link href='https://unpkg.com' rel='dns-prefetch'/><link href='https://altiuszone.b-cdn.net' rel='dns-prefetch'/><link href='https://cdn.jsdelivr.net' rel='dns-prefetch'/><link href='https://platform-cdn.sharethis.com' rel='preconnect'/>
   <link as='script' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/jq.js' rel='preload'/>
   <link as='script' href='https://cdn.jsdelivr.net/gh/Sparky4567/Artifact@main/bootstrap.js' rel='preload'/>
